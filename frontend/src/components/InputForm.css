@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg-light: #f5f7fa;
+  --card-light: #ffffffcc;
+  --text-light: #1f2937;
+  --btn-gradient-light: linear-gradient(to right, #14b8a6, #3b82f6);
+
+  --bg-dark: #111827;
+  --card-dark: #1f2937cc;
+  --text-dark: #f8fafc;
+  --btn-gradient-dark: linear-gradient(to right, #0ea5e9, #8b5cf6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  transition: background 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-light);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out;
+}
+
+body.dark .card {
+  background: var(--card-dark);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+body.dark .title {
+  color: var(--text-dark);
+}
+
+.input-box {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  margin-bottom: 20px;
+  background: #f1f5f9;
+  box-shadow: inset 1px 1px 3px #ccc;
+  transition: all 0.3s ease;
+}
+
+body.dark .input-box {
+  background: #374151;
+  color: white;
+  box-shadow: inset 1px 1px 3px #111827;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: var(--btn-gradient-light);
+  box-shadow: 0 5px 15px rgba(14, 165, 233, 0.4);
+}
+
+body.dark .btn {
+  background: var(--btn-gradient-dark);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.result {
+  font-size: 18px;
+  padding: 16px;
+  margin-top: 10px;
+  border-radius: 14px;
+  background: #e2e8f0;
+  color: #1f2937;
+}
+
+body.dark .result {
+  background: #334155;
+  color: #e0f2fe;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  border: 2px solid #94a3b8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: #334155;
+  transition: 0.3s ease;
+}
+
+body.dark .toggle-btn {
+  color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+}
+
+body.dark .footer {
+  color: #cbd5e1;
+}
