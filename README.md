@@ -77,3 +77,9 @@ A full-stack Natural Language Processing (NLP) based web application that offers
    - Performs prediction
 4. Result is returned and displayed on screen.
 
+## 🚀 Conclusion
+
+This project showcases the potential of combining modern technologies like React.js, Node.js, Express, and MongoDB to build a powerful, full-stack application. By integrating sentiment analysis and text summarization using advanced NLP techniques, the app delivers meaningful insights from textual data. Feel free to explore, contribute, and enhance the project further!
+
+Thank you for checking it out! 🌟
+
